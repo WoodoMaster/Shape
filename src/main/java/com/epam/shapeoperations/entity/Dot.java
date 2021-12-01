@@ -1,38 +1,66 @@
 package com.epam.shapeoperations.entity;
 
 public class Dot {
-	private double x;
-	private double y;
-	private double z;
+	private double coordinateX;
+	private double coordinateY;
+	private double coordinateZ;
 
-	public Dot(double x, double y, double z) {
-		this.x = x;
-		this.y = y;
-		this.z = z;
+	public Dot(double coordinateX, double coordinateY, double coordinateZ) {
+		this.coordinateX = coordinateX;
+		this.coordinateY = coordinateY;
+		this.coordinateZ = coordinateZ;
 	}
 
-	public double getX() {
-		return x;
+	public double getCoordinateX() {
+		return coordinateX;
 	}
 
-	public void setX(double x) {
-		this.x = x;
+	public void setCoordinateX(double coordinateX) {
+		this.coordinateX = coordinateX;
 	}
 
-	public double getY() {
-		return y;
+	public double getCoordinateY() {
+		return coordinateY;
 	}
 
-	public void setY(double y) {
-		this.y = y;
+	public void setCoordinateY(double coordinateY) {
+		this.coordinateY = coordinateY;
 	}
 
-	public double getZ() {
-		return z;
+	public double getCoordinateZ() {
+		return coordinateZ;
 	}
 
-	public void setZ(double z) {
-		this.z = z;
+	public void setCoordinateZ(double coordinateZ) {
+		this.coordinateZ = coordinateZ;
+	}
+
+	@Override
+	public boolean equals(Object o) {
+		if (o == this) {
+			return true;
+		}
+		if (!(o instanceof Dot)) {
+			return false;
+		}
+		Dot dot = (Dot) o;
+		return this.coordinateX == dot.getCoordinateX() && this.coordinateY == dot.getCoordinateY()
+				&& this.coordinateZ == dot.getCoordinateZ();
+	}
+
+	@Override
+	public int hashCode() {
+		int result = 17;
+		result = (int) (31 * result + coordinateX);
+		result = (int) (31 * result + coordinateY);
+		result = (int) (31 * result + coordinateZ);
+		return result;
+	}
+
+	@Override
+	public String toString() {
+		return "Coordinate x: " + coordinateX + ", Coordinate y: " + coordinateY + ", Coordinate z: " + coordinateZ;
+
 	}
 
 }
