@@ -1,12 +1,13 @@
-package com.epam.shapeoperations.service.calculation;
+package com.epam.shape.logic;
 
 
 import org.junit.Assert;
 import org.junit.Test;
 
-import com.epam.shapeoperations.entity.Dot;
-import com.epam.shapeoperations.entity.Vector;
-import com.epam.shapeoperations.service.creation.VectorCreator;
+import com.epam.shape.entity.Point;
+import com.epam.shape.entity.Vector;
+import com.epam.shape.logic.VectorCalculator;
+import com.epam.shape.logic.VectorCreator;
 
 public class VectorCalculatorTest {
 	@Test
@@ -37,11 +38,11 @@ public class VectorCalculatorTest {
 	public void testCreateVectorShouldCreateVectorWhenTwoDotsGiven() {
 		// given
 		VectorCreator vectorCreator = new VectorCreator();
-		Dot firstDot = new Dot(-4, 2, 5);
-		Dot secondDot = new Dot(1, 9, 0);
+		Point firstPoint = new Point(-4, 2, 5);
+		Point secondPoint = new Point(1, 9, 0);
 		Vector expected = new Vector(5, 7, -5);
 		// when
-		Vector actual = vectorCreator.createVector(firstDot, secondDot);
+		Vector actual = vectorCreator.createVector(firstPoint, secondPoint);
 		// then
 		Assert.assertEquals(expected, actual);
 	}

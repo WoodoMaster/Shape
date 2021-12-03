@@ -1,4 +1,4 @@
-package com.epam.shapeoperations.service;
+package com.epam.shape.data;
 
 import java.io.IOException;
 

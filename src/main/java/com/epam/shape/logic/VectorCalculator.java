@@ -1,7 +1,6 @@
-package com.epam.shapeoperations.service.calculation;
+package com.epam.shape.logic;
 
-import com.epam.shapeoperations.entity.Dot;
-import com.epam.shapeoperations.entity.Vector;
+import com.epam.shape.entity.Vector;
 
 public class VectorCalculator {
 

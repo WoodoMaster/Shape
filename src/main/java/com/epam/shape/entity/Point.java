@@ -1,11 +1,11 @@
-package com.epam.shapeoperations.entity;
+package com.epam.shape.entity;
 
-public class Dot {
+public class Point {
 	private double coordinateX;
 	private double coordinateY;
 	private double coordinateZ;
 
-	public Dot(double coordinateX, double coordinateY, double coordinateZ) {
+	public Point(double coordinateX, double coordinateY, double coordinateZ) {
 		this.coordinateX = coordinateX;
 		this.coordinateY = coordinateY;
 		this.coordinateZ = coordinateZ;
@@ -40,10 +40,10 @@ public class Dot {
 		if (o == this) {
 			return true;
 		}
-		if (!(o instanceof Dot)) {
+		if (!(o instanceof Point)) {
 			return false;
 		}
-		Dot dot = (Dot) o;
+		Point dot = (Point) o;
 		return this.coordinateX == dot.getCoordinateX() && this.coordinateY == dot.getCoordinateY()
 				&& this.coordinateZ == dot.getCoordinateZ();
 	}

@@ -1,4 +1,4 @@
-package com.epam.shapeoperations.service;
+package com.epam.shape.logic;
 
 import java.util.Arrays;
 import java.util.List;
@@ -7,10 +7,13 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.mockito.Mockito;
 
-import com.epam.shapeoperations.entity.Dot;
-import com.epam.shapeoperations.entity.Tetrahedron;
-import com.epam.shapeoperations.service.creation.TetrahedronCreator;
+import com.epam.shape.entity.Point;
+import com.epam.shape.entity.Tetrahedron;
+import com.epam.shape.logic.TetrahedronCreator;
 
+// TODO mochito
+//TODO optional in creator
+//TODO Tetr validator Point pointD=tetr.getPointD();
 public class DirectorTest {
 //	private static final String TEST_PATH = "path";
 //	private static final String VALID_LINE1 = "1.4 2.3 5.4 -3.4 -6.4 1.3 2.8 4.3 6.2 -7.6 3.4 -7.6";

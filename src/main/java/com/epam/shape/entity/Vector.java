@@ -1,4 +1,4 @@
-package com.epam.shapeoperations.entity;
+package com.epam.shape.entity;
 
 public class Vector {
 	private double coordinateX;
