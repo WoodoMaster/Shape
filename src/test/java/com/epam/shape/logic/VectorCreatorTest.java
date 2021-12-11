@@ -7,7 +7,6 @@ import org.junit.Test;
 import com.epam.shape.data.DataException;
 import com.epam.shape.entity.Point;
 import com.epam.shape.entity.Vector;
-import com.epam.shape.logic.VectorCreator;
 
 public class VectorCreatorTest {
 	@Test
